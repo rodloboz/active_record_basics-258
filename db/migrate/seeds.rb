@@ -25,8 +25,8 @@ puts "Creating 100 restaurants..."
 100.times do
   Restaurant.create!({
     name: Faker::Company.name,
-    address: "#{Faker::Address.street_address}, #{Faker::Address.city }",
-    ratings: rand(0..5)
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city }"
+    rating: rand(0..5)
   })
 end
 
